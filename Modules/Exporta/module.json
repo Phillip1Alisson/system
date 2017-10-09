@@ -1,0 +1,16 @@
+{
+    "name": "Exporta",
+    "alias": "exporta",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\Exporta\\Providers\\ExportaServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}

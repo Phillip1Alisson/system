@@ -1,0 +1,16 @@
+{
+    "name": "DashDadosInternos",
+    "alias": "dashdadosinternos",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\DashDadosInternos\\Providers\\DashDadosInternosServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}

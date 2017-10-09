@@ -1,0 +1,16 @@
+{
+    "name": "Pesquisa",
+    "alias": "pesquisa",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\Pesquisa\\Providers\\PesquisaServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}

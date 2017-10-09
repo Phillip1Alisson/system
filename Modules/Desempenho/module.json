@@ -1,0 +1,16 @@
+{
+    "name": "Desempenho",
+    "alias": "desempenho",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\Desempenho\\Providers\\DesempenhoServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}
