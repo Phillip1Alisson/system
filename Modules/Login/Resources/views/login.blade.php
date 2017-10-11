@@ -13,8 +13,8 @@
         <h1>Login</h1>
         <form action="{{route('login/post')}}" method="post">
             {{csrf_field()}}
-            <input type="email" placeholder="usuario@ibrc.com.br" id="username" required>
-            <input type="password" placeholder="Senha" id="password" required>
+            <input type="email" name="email" placeholder="usuario@ibrc.com.br" id="username" required>
+            <input type="password" name="senha" placeholder="Senha" id="password" required>
             <button>Conectar</button>
 
             @if(session('erro'))
