@@ -1,9 +1,12 @@
 <?php
 
-Route::group(['middleware' => 'web', 'prefix' => 'login', 'namespace' => 'Modules\Login\Http\Controllers'], function()
+$namespace = 'Modules\Login\Http\Controllers';
+
+
+Route::group(['middleware' => 'web', 'prefix' => 'login', 'namespace' => $namespace], function()
 {
-    Route::get('/view', 'LoginController@view');
+    Route::get('/', 'LoginController@viewLogin')->name('login');
 
 
-    Route::get('/logar', 'LoginController@postLogar')->name('login/logar');
+    Route::post('/logar', 'LoginController@loginPost')->name('login/post');
 });
