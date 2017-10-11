@@ -1,20 +1,22 @@
 body{
 
   margin: 0;
+  background: $path_img_bg no-repeat fixed center center;
+  background-size: cover;
+  font-family: Montserrat;
 
   .bg{
 
     width: 100%;
     height: 100%;
-    position: fixed;
+    min-height: 800px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
     background: rgba(43, 65, 80, .9);
 
   }
 
-  // background: url('http://i.imgur.com/Eor57Ae.jpg') no-repeat fixed center center;
-  background: $path_img_bg no-repeat fixed center center;
-  background-size: cover;
-  font-family: Montserrat;
 
   .logo{
 
@@ -23,12 +25,12 @@ body{
     // background: url('http://i.imgur.com/fd8Lcso.png') no-repeat;
     background: $path_logo no-repeat;
     margin: 100px auto;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }//logo
 
   .login-block{
 
-    width: 320px;
+    width: 360px;
     padding: 20px;
     background: #fff;
     border-radius: 5px;
@@ -109,6 +111,13 @@ body{
       &:hover{
         background: #ff7b81;
       }
+    }
+
+    .alert{
+
+      background: none;
+      font-size: 18px;
+      margin-top: 20px;
     }
 
   }//login-block

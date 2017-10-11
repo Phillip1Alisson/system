@@ -11,11 +11,22 @@
     <div class="logo"></div>
     <div class="login-block">
         <h1>Login</h1>
-        <form action="{{route('login/logar')}}">
-            <input type="text" placeholder="Usuário" id="username" required>
+        <form action="{{route('login/post')}}" method="post">
+            {{csrf_field()}}
+            <input type="email" placeholder="usuario@ibrc.com.br" id="username" required>
             <input type="password" placeholder="Senha" id="password" required>
+            <button>Conectar</button>
+
+            @if(session('erro'))
+                <div class="text-center">
+                    <div class="alert alert-danger">
+                        Usuário e senha não conferem!
+                    </div>
+                </div>
+            @endif
+
+            <div class="clearfix"></div>
         </form>
-        <button>Conectar</button>
     </div>
 </div>
 </body>
